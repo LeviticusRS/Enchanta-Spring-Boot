@@ -1,0 +1,113 @@
+@media (max-width:1635px) {
+    .players {
+        display:none;
+    }
+}
+
+@media (max-width:991px) {
+    .players {
+        display:initial;
+    }
+}
+
+@media (max-width:963px) {
+    nav {
+        padding:0 15px;
+    }
+}
+
+@media (max-width:865px) {
+    #slogan h1 {
+        font-size:5.5vw;
+        padding:0 20px;
+    }
+}
+
+@media (max-width:760px) {
+    #site-links, #topbar {
+        display:none;
+    }
+}
+
+@media (max-width:636px) {
+    .logo img {
+        width:350px;
+    }
+
+    header .logo {
+        width:350px
+    }
+}
+
+@media (max-width:760px) {
+    .open-button {
+    display: contents !important;
+  }
+
+    .open-button img {
+    position: absolute;
+    top: 20px;
+    left:20px;
+    padding: 10px;
+  }
+}
+
+@media (max-width:480px) {
+    .open-button img {
+    z-index: 999;
+  }
+}
+
+.mobile-menu-content {
+    position: fixed;
+    background: #1b191d;
+    width: 50%;
+    height: 100%;
+    z-index: 999;
+    padding-top: 12%;
+  }
+
+.mobile-menu-content li {
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size: 5vw;
+    line-height:12vw;
+}
+
+.mobile-menu-content li a {
+    color: #fff;
+}
+
+.mobile-menu-content li a:hover {
+    color: #8224ab;
+}
+
+.close-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 9999;
+    font-size: 6vw;
+    color:#8224ab;
+}
+
+.close-button:hover {
+    cursor: pointer;
+}
+
+.mobile-menu ul {
+    list-style: none;
+}
+
+@media (max-width:1614px) {
+    .card .enchanta-btn {
+        font-size:12px;
+        padding:22px 10px;
+    }
+}
+
+@media (max-width:575px) {
+    .card {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,48 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.0-SNAPSHOT'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+}
+
+group = 'com.joshua.ransom'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+	jcenter()
+	maven { url 'https://repo.spring.io/milestone' }
+	maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	implementation 'org.springframework.boot:spring-boot-starter-freemarker'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.session:spring-session-data-redis'
+	//developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'org.postgresql:postgresql'
+	compileOnly 'org.projectlombok:lombok:1.18.12'
+	annotationProcessor 'org.projectlombok:lombok:1.18.12'
+	compile('org.springframework:spring-orm:4.2.5.RELEASE')
+	compile('org.springframework.boot:spring-boot-starter-tomcat')
+	compile('de.svenkubiak:jBCrypt:0.4.1')
+	compile('com.googlecode.json-simple:json-simple:1.1.1')
+	compile group: 'com.google.guava', name: 'guava', version: '29.0-jre'
+	compile 'org.apache.commons:commons-lang3:3.4'
+	compile 'com.fasterxml.jackson.core:jackson-core:2.11.2'
+	compile 'com.fasterxml.jackson.core:jackson-databind:2.11.2'
+	compile group: 'com.google.code.gson', name: 'gson', version: '2.6.2'
+	compile group: 'com.amazonaws', name: 'aws-java-sdk-ses', version: '1.11.43'
+	compile group: 'com.mixpanel', name: 'mixpanel-java', version: '1.5.0'
+	compile group: 'redis.clients', name: 'jedis', version: '3.3.0'
+	compile group: 'org.kefirsf', name: 'kefirbb', version: '1.5'
+	compile group: 'com.inversoft', name: 'prime-transformer', version: '2.1.4'
+	implementation "com.stripe:stripe-java:19.45.0"
+	compile 'com.paypal.sdk:rest-api-sdk:+'
+	compile("club.minnced:discord-webhooks:0.5.6")
+	implementation group: 'com.facebook.business.sdk', name: 'facebook-java-business-sdk', version: '10.0.1'
+
+}
